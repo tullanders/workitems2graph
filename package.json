@@ -1,0 +1,23 @@
+{
+  "name": "workitems2graph",
+  "version": "1.0.0",
+  "description": "Build a Neo4j graph of work items in Azure DevOps",
+  "main": "./src/runsingle.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tullanders/workitems2graph.git"
+  },
+  "author": "Anders Bergkvist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tullanders/workitems2graph/issues"
+  },
+  "homepage": "https://github.com/tullanders/workitems2graph#readme",
+  "dependencies": {
+    "axios": "^1.9.0",
+    "neo4j-driver": "^5.28.1"
+  }
+}
