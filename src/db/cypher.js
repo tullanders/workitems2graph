@@ -13,7 +13,9 @@ with $param as param
   workItem.iterationPath = row.fields['System.IterationPath'],
   workItem.commentCount = row.fields['System.CommentCount'],
   workItem.title = row.fields['System.Title'],
-  workItem.url = row._links.html.href
+  workItem.url = row._links.html.href,
+  workItem.effort = row.fields['Microsoft.VSTS.Scheduling.Effort'],
+  workItem.priority = row.fields['Microsoft.VSTS.Common.Priority']
 with row, workItem
 
 call (row, workItem) {
